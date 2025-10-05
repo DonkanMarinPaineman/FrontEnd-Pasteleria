@@ -120,3 +120,29 @@ body {
     font-size: 0.9rem;
     letter-spacing: 1px;
 }
+
+/* Barra simple del carrito (pegada abajo) */
+.cart-bar {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(123deg, #ff7eb9, #fa92bb, #7afcff);
+  padding: .6rem 1rem;
+  display: flex; justify-content: center; gap: .75rem; align-items: center;
+  box-shadow: 0 -6px 12px rgba(0,0,0,.06);
+  font-weight: 600; z-index: 999;
+}
+.cart-bar button {
+  background: #ff4e91; color: #fff; border: none;
+  padding: .4rem .7rem; border-radius: 8px; cursor: pointer; font-weight: 700;
+}
+.cart-bar button:hover { filter: brightness(.95); }
+
+/* Botón agregar sencillo */
+.btn-add {
+  margin-top: .5rem;
+  background: #ff4e91; color: #fff; border: none;
+  padding: .45rem .75rem; border-radius: 8px; cursor: pointer; font-weight: 600;
+}
+.btn-add:hover { filter: brightness(.95); }
+
+/* Deja espacio inferior para que la barra no tape el contenido */
+body { padding-bottom: 64px; }

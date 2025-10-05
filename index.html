@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-
 <body>
+    <div class="cart-bar" role="status" aria-live="polite">
+        🛒<span id="cart-count">0</span> ítems — Total: <strong id="cart-total">$0</strong>
+        <button id="cart-clear" type="button">Vaciar</button>
+    </div>
 
     <header id="encabezado"> <!-- ID único para el encabezado -->
         <h1 class="titulo-principal">🌟Pasteleria Mil Sabores🌟</h1> <!-- Clase para el título principal -->
@@ -33,6 +36,7 @@
                     <h3 class="producto-nombre">Torta de Peppa Pig</h3>
                     <p class="producto-desc">Torta de vainilla con forma de peppa</p>
                     <p class="producto-precio"><data value="14990">$14.990</data></p>
+                    <button class="btn-add" type="button">Agregar al carrito</button>
                 </div>
             </article>
             <!--Producto 2-->
@@ -44,6 +48,7 @@
                     <h3 class="producto-nombre">Torta de miki maus</h3>
                     <p class="producto-desc">Torta de lucuma con forma de miki maus</p>
                     <p class="producto-precio"><data value="12990">$12.990</data></p>
+                    <button class="btn-add" type="button">Agregar al carrito</button>
                 </div>
             </article>
             <!--Producto 3-->
@@ -55,8 +60,46 @@
                     <h3 class="producto-nombre">Torta de Minion</h3>
                     <p class="producto-desc">Torta de chocolate con forma de minion</p>
                     <p class="producto-precio"><data value="10990">$10.990</data></p>
+                    <button class="btn-add" type="button">Agregar al carrito</button>
                 </div>
             </article>
+            <!--Producto 4-->
+            <article class="producto" id="prod-shuek">
+                <figure class="producto-media">
+                    <img src="imagenes/shuek.jpg" alt="shuek" class="producto-img">
+                </figure>
+                <div class="producto-info">
+                    <h3 class="producto-nombre">Torta de shuek</h3>
+                    <p class="producto-desc">Torta de pistacho con forma de shuek</p>
+                    <p class="producto-precio"><data value="11990">$11.990</data></p>
+                    <button class="btn-add" type="button">Agregar al carrito</button>
+                </div>
+            </article>
+            <!--Producto 5-->
+            <article class="producto" id="prod-rayo">
+                <figure class="producto-media">
+                    <img src="imagenes/rayo.JPG" alt="rayo" class="producto-img">
+                </figure>
+                <div class="producto-info">
+                    <h3 class="producto-nombre">Torta de Rayo macuin</h3>
+                    <p class="producto-desc">Torta de chocolate con forma de Rayo Macuin</p>
+                    <p class="producto-precio"><data value="12990">$12.990</data></p>
+                    <button class="btn-add" type="button">Agregar al carrito</button>
+                </div>
+            </article>
+            <!--Producto 6-->
+            <article class="producto" id="prod-dientes">
+                <figure class="producto-media">
+                    <img src="imagenes/dientes.jpg" alt="dientes" class="producto-img">
+                </figure>
+                <div class="producto-info">
+                    <h3 class="producto-nombre">Torta con Cara </h3>
+                    <p class="producto-desc">Torta de vainilla con cara</p>
+                    <p class="producto-precio"><data value="10990">$10.990</data></p>
+                    <button class="btn-add" type="button">Agregar al carrito</button>
+                </div>
+            </article>
+            
             
         </section>
     </main>
@@ -65,6 +108,7 @@
         <p class="texto-footer">Hecho por Donkan</p> <!-- Clase para texto del footer -->
     </footer>
 
+    <script src="js/main"></script>
 </body>
 
 </html>
